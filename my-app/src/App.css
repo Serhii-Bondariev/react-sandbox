@@ -1,6 +1,52 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #6a9fd0; */
 }
+
+.App {
+  display: grid;
+  grid-template-areas:
+  'header header header header header'
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+  gap: 12px;
+
+  background: linear-gradient(#a619f8,#00f2fe);
+  text-align: center;
+  background-color: #989696;
+}
+
+.header {
+  border: 1px solid black;
+  grid-area: header;
+}
+
+.main {
+  border: 1px solid black;
+  grid-area: main;
+
+}
+
+.menu {
+  border: 1px solid black;
+  grid-area: menu;
+}
+
+.right{
+  border: 1px solid black;
+  grid-area: right;
+}
+
+.footer{
+  border: 1px solid black;
+  grid-area: footer;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -11,6 +57,22 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 20px;
+}
+
+.open-btn {
+  margin: 10px 20px;
+  padding: 20px;
+  font-size: 2rem;
 }
 
 .App-header {
